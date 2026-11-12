@@ -1,0 +1,688 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f6f6f7;
+  color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.bg-org {
+  color: #e10600;
+}
+.link:hover {
+  color: #e10600;
+}
+.MuiBadge-badge {
+  background-color: #e10600 !important;
+}
+nav button {
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+nav button:hover {
+  text-transform: capitalize !important;
+  color: #e10600 !important;
+}
+.sliderhome {
+  overflow: inherit !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e10600 !important;
+  font-size: 2rem !important;
+  width: 45px !important;
+  height: 45px !important;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #e10600 !important;
+  font-size: 22px !important;
+}
+.catslider {
+  overflow: inherit !important;
+}
+.catslider .swiper-button-prev,
+.catslider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  background-color: transparent !important;
+
+  border-radius: 50% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.catslider .swiper-button-prev:after,
+.catslider .swiper-button-next:after {
+  color: #e10600 !important;
+  font-size: 15px !important;
+}
+.catslider .swiper-button-prev:hover,
+.catslider .swiper-button-next:hover {
+  background-color: #e10600 !important;
+}
+.catslider .swiper-button-prev:hover:after,
+.catslider .swiper-button-next:hover::after {
+  color: #ffffff !important;
+}
+.catslider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #e10600 !important;
+  border-radius: 10px !important;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #e10600 !important;
+  border-radius: 10px !important;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+::-webkit-scrollbar-track {
+  background: #f0f5f5 !important;
+}
+.smlbtn .swiper-button-prev:after,
+.smlbtn .swiper-button-next:after {
+  color: #e10600 !important;
+  font-size: 15px !important;
+}
+.smlbtn .swiper-button-prev,
+.smlbtn .swiper-button-next {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.smlbtn .swiper-button-prev:hover,
+.smlbtn .swiper-button-next:hover {
+  background-color: #e10600 !important;
+}
+.smlbtn .swiper-button-prev:hover:after,
+.smlbtn .swiper-button-next:hover::after {
+  color: #ffffff !important;
+}
+.MuiTabs-indicator {
+  background-color: #e10600 !important;
+}
+.MuiTab-textColorPrimary {
+  color: #2e2929 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #e10600 !important;
+}
+.productslider .swiperwrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.productslider .swiper-button-prev,
+.productslider .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.productslider .swiper-button-prev:after,
+.productslider .swiper-button-next:after {
+  color: #0e0c0c !important;
+  font-size: 15px !important;
+}
+.productslider .swiper-button-prev:hover,
+.productslider .swiper-button-next:hover {
+  background-color: #e10600 !important;
+}
+.productslider .swiper-button-prev:hover:after,
+.productslider .swiper-button-next:hover::after {
+  color: #ffffff !important;
+}
+.btn-org {
+  background-color: #e10600 !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 7px 20px !important;
+  font-size: 15px;
+}
+.btn-org.btn-border {
+  background: none !important;
+  color: #e10600 !important;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 7px 20px !important;
+  border: 1px solid #e10600 !important;
+}
+
+.btn-org.btn-border:hover {
+  background-color: #555151 !important;
+  color: #f0f5f5 !important;
+  border: 1px solid #e10600 !important;
+}
+.btn-org:hover {
+  background-color: #555151 !important;
+}
+.footer form input::placeholder {
+  font-size: 13px;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 12px !important;
+  color: rgba(0, 0, 0, 0.7);
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: #e10600 !important;
+}
+.homesliderv2 .swiper-slide-active .info {
+  right: 0px !important;
+  opacity: 1;
+}
+.homesliderv2 .swiper-slide-active .info h2 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homesliderv2 .swiper-slide-active .info h4 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homesliderv2 .swiper-slide-active .info h5 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homesliderv2 .swiper-slide-active .info .btn_ {
+  right: 0px !important;
+  opacity: 1;
+}
+.homesliderv2 .info h2 {
+  transition-duration: 1.5s;
+}
+.homesliderv2 .info h4 {
+  transition-duration: 1s;
+}
+.homesliderv2 .info h5 {
+  transition-duration: 1.8s;
+}
+.homesliderv2 .info .btn_ {
+  transition-duration: 2.2s;
+}
+.MuiCheckbox-root {
+  padding: 6px !important;
+}
+.ReactCollapse--collapse {
+  transition: height 600ms;
+}
+.range-slider {
+  height: 3px !important;
+}
+.range-slider .range-slider__thumb {
+  width: 13px !important;
+  height: 13px !important;
+}
+.range-slider .range-slider__thumb,
+.range-slider .range-slider__range {
+  background-color: #ff5252 !important;
+}
+.itemViewActions button.active svg {
+  color: #ff5252 !important;
+  opacity: 1;
+}
+.Mui-selected.MuiPaginationItem-page {
+  background-color: #ff5252 !important;
+  color: #f0f5f5 !important;
+}
+.zoomthumbs .swiper-slide {
+  height: auto !important;
+}
+.zoomthumbs {
+  position: relative;
+  padding-top: 50px; /* Ensure it acts as the container for absolutely positioned buttons */
+}
+.zoomthumbs .swiper-button-next {
+  position: absolute;
+  bottom: 0px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+  top: inherit !important;
+}
+
+.zoomthumbs .swiper-button-prev {
+  position: absolute;
+  top: 20px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+.zoomthumbs .swiper-button-prev:hover,
+.zoomthumbs .swiper-button-next:hover {
+  background-color: #ff5252 !important;
+}
+.zoomthumbs .swiper-button-prev:hover::after,
+.zoomthumbs .swiper-button-next:hover::after {
+  color: #f0f5f5 !important;
+}
+.zoomthumbs .swiper-button-next::after {
+  transform: rotate(90deg) !important;
+}
+.zoomthumbs .swiper-button-prev::after {
+  transform: rotate(90deg) !important;
+}
+.zoomthumbs .swiper-wrapper {
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+}
+.content .actions button {
+  min-width: 30px !important;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+input[type="number"]::-webkit-inner-spin button,
+input[type="number"]::-webkit-outer-spin button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.reviewscroll::-webkit-scrollbar-thumb {
+  background: #f0f5f5 !important;
+}
+.reviewscroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+.cartpanel .MuiPaper-root {
+  width: 400px !important;
+}
+.addresspanel .MuiPaper-root {
+  width: 500px !important;
+}
+#size-menu .MuiButtonBase-root {
+  font-size: 12px !important;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #f0f5f5 !important;
+}
+#account-menu .MuiPaper-root {
+  width: 200px !important;
+}
+.myaccounttabs li a {
+  position: relative;
+  display: block;
+}
+.myaccounttabs li a ::before {
+  width: 3px;
+  height: 50%;
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  background-color: #e10600;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.myaccounttabs li a.active ::before {
+  height: 100%;
+  opacity: 1;
+  top: 0%;
+}
+.myaccounttabs li a.active button svg {
+  color: #e10600 !important;
+  opacity: 1 !important;
+}
+
+button .MuiCircularProgress-root {
+  width: 20px !important;
+  height: 20px !important;
+}
+.MuiDialog-paper {
+  overflow: visible !important;
+  width: 65% !important;
+  max-width: 70% !important;
+}
+/* Force the PhoneInput to match TextField */
+.react-international-phone-input {
+  width: 100% !important;
+  height: 100% !important;
+}
+.react-international-phone-country-selector-button {
+  width: 100% !important;
+  height: 100% !important;
+}
+.productdetailsmodal .MuiDialog-paper {
+  width: 1000px !important;
+  max-width: 1000px !important;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body,
+#root {
+  min-width: 320px;
+  max-width: 100%;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.container {
+  width: min(95%, 1280px);
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 74px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .sticky > div:first-child > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sticky > div:first-child > div > p:nth-child(2) {
+    flex: 1 1 100%;
+    order: 1;
+  }
+
+  .MuiDialog-paper,
+  .MuiDialog-paper.productdetailsmodal {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin: 12px !important;
+  }
+
+  .productdetailsmodal .MuiDialog-paper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cartpanel .MuiPaper-root,
+  .addresspanel .MuiPaper-root {
+    width: min(100vw, 420px) !important;
+    max-width: 100vw !important;
+  }
+
+  .swiper-slide .iiz {
+    height: min(100vw, 400px) !important;
+  }
+
+  .zoomthumbs {
+    height: min(100vw, 420px) !important;
+  }
+
+  .zoomcontainer {
+    width: calc(100% - 60px) !important;
+    height: min(100vw, 420px) !important;
+  }
+
+  .slider {
+    width: 52px !important;
+  }
+
+  .zoomthumbs {
+    padding-top: 0;
+  }
+
+  .card[class*="w-[400px]"],
+  .loginbox {
+    width: calc(100% - 32px) !important;
+    max-width: 460px;
+  }
+
+  .loginbox {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product-details-page,
+  main,
+  form {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky > div:first-child > div > p:first-child {
+    display: none;
+  }
+
+  .btn-org,
+  .btn-org.btn-border {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+.journal-article-content {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.journal-article-content > * + * {
+  margin-top: 1.25rem;
+}
+
+.journal-article-content h1,
+.journal-article-content h2,
+.journal-article-content h3,
+.journal-article-content h4 {
+  margin-top: 2rem;
+  color: #0f1f4b;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.journal-article-content h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+
+.journal-article-content h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.journal-article-content h3,
+.journal-article-content h4 {
+  font-size: 1.2rem;
+}
+
+.journal-article-content p {
+  margin-top: 1.25rem;
+}
+
+.journal-article-content a {
+  color: #8b0000;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.journal-article-content ul,
+.journal-article-content ol {
+  margin-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.journal-article-content ul {
+  list-style: disc;
+}
+
+.journal-article-content ol {
+  list-style: decimal;
+}
+
+.journal-article-content li + li {
+  margin-top: 0.5rem;
+}
+
+.journal-article-content blockquote {
+  margin: 2rem 0;
+  border-left: 3px solid #8b0000;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  color: #0f1f4b;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.journal-article-content img,
+.journal-article-content video {
+  height: auto;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.journal-article-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.journal-article-content th,
+.journal-article-content td {
+  border: 1px solid #e2e8f0;
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+}
+
+.journal-article-content th {
+  background: #f5f6f8;
+  color: #0f1f4b;
+}
+
+#root {
+  width: 100%;
+  min-width: 320px;
+}
+
+@media (max-width: 767px) {
+  .site-header-main {
+    position: relative;
+    min-height: 64px !important;
+    gap: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .site-header-logo {
+    position: absolute;
+    left: 50%;
+    width: clamp(130px, 42vw, 170px);
+    transform: translateX(-30%);
+  }
+
+  .site-header-logo svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .site-header-actions {
+    gap: 0 !important;
+  }
+
+  .site-header-actions .MuiIconButton-root,
+  .site-header-actions > a[aria-label="Login"] {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    padding: 6px !important;
+  }
+
+  .productdetailsmodal .container {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .productdetailsmodal .container > .col-1,
+  .productdetailsmodal .container > .col-2 {
+    width: 100% !important;
+  }
+
+  .productdetailsmodal .container > .col-2 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .MuiTableContainer-root {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .MuiPagination-ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    border-radius: 20px;
+    padding: 0.625rem;
+  }
+
+  .product-card-image {
+    border-radius: 15px;
+  }
+
+  .product-card-buy-button {
+    height: 44px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .product-card h3 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-list-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}

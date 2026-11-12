@@ -1,0 +1,546 @@
+.MuiBadge-badge {
+  background: #ff5252 !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+}
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+a.active button {
+  background: #cecece !important;
+}
+
+#loginsection {
+  background-color: white;
+}
+.css-rizt0-MuiTypography-root {
+  font-size: 14px !important;
+}
+.MuiAppBar-colorPrimary {
+  background: #333a4b !important;
+}
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input arrows for Firefox */
+.no-spinner[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.phone-container {
+  width: 100% !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  border-radius: 6px;
+}
+
+.phone-container:focus-within {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.phone-input {
+  width: 100% !important;
+  border: none;
+  outline: none;
+}
+.zoomthumbs .swiper-slide {
+  height: auto !important;
+}
+.zoomthumbs {
+  position: relative;
+  padding-top: 50px; /* Ensure it acts as the container for absolutely positioned buttons */
+}
+.zoomthumbs .swiper-button-next {
+  position: absolute;
+  bottom: 0px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+  top: inherit !important;
+}
+
+.zoomthumbs .swiper-button-prev {
+  position: absolute;
+  top: 20px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+.zoomthumbs .swiper-button-prev:hover,
+.zoomthumbs .swiper-button-next:hover {
+  background-color: #ff5252 !important;
+}
+.zoomthumbs .swiper-button-prev:hover::after,
+.zoomthumbs .swiper-button-next:hover::after {
+  color: #f0f5f5 !important;
+}
+.zoomthumbs .swiper-button-next::after {
+  transform: rotate(90deg) !important;
+}
+.zoomthumbs .swiper-button-prev::after {
+  transform: rotate(90deg) !important;
+}
+.zoomthumbs.space .swiper-wrapper {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.swiper-slide .iiz {
+  height: 400px !important;
+  overflow: hidden !important;
+}
+
+.rsw-editor {
+  width: 100% !important;
+  min-height: 250px !important;
+  background: white !important;
+}
+
+html {
+  min-width: 320px;
+}
+
+body,
+#root {
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.contentmain,
+.contentright {
+  min-width: 0;
+}
+
+.contentright {
+  overflow-x: hidden;
+}
+
+.contentright .overflow-x-auto {
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 1023px) {
+  header[class*="pl-64"] {
+    padding-left: 16px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .contentmain {
+    display: block;
+  }
+
+  .sidebarwrapper {
+    position: fixed;
+    z-index: 40;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    width: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .sidebarwrapper[class*="w-[18%]"] {
+    width: min(84vw, 300px) !important;
+  }
+
+  .sidebarwrapper .sidebar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 41;
+    padding: 8px 16px !important;
+    overflow-y: auto;
+  }
+
+  .sidebarwrapper[class*="w-0"] .sidebar {
+    width: 0 !important;
+    visibility: hidden;
+  }
+
+  .contentright {
+    width: 100% !important;
+    padding: 12px !important;
+  }
+
+  .loginbox,
+  .card[class*="w-[70%]"],
+  .contentright [class*="w-[80%]"],
+  .contentright [class*="w-[70%]"],
+  .contentright [class*="w-[50%]"] {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .contentright .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contentright table {
+    white-space: nowrap;
+  }
+
+  .contentright .overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .loginbox {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .part2 {
+    width: auto !important;
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentright {
+    padding: 8px !important;
+  }
+
+  .contentright .grid-cols-2,
+  .contentright .grid-cols-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contentright .p-6 {
+    padding: 12px;
+  }
+}
+
+/* AgCell admin workspace */
+:root {
+  color-scheme: light;
+  --admin-navy: #0f1f4b;
+  --admin-red: #8b0000;
+  --admin-canvas: #f5f7fb;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  color: #172033;
+  background: var(--admin-canvas);
+  font-family: "Montserrat", "Nunito", sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  background: var(--admin-canvas);
+}
+
+.contentmain {
+  min-height: calc(100vh - 64px);
+  align-items: stretch;
+}
+
+.sidebarwrapper {
+  position: relative;
+  z-index: 10;
+  flex: 0 0 auto;
+  overflow: visible !important;
+}
+
+.sidebarwrapper[class*="w-[18%]"] {
+  width: 260px !important;
+  padding: 0 !important;
+}
+
+.sidebarwrapper[class*="w-0"] {
+  width: 0 !important;
+  padding: 0 !important;
+}
+
+.sidebar {
+  position: fixed !important;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 260px !important;
+  height: auto !important;
+  padding: 14px 14px 18px !important;
+  color: #e2e8f0;
+  background: linear-gradient(180deg, #0f1f4b 0%, #101a39 100%) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarwrapper[class*="w-0"] .sidebar {
+  width: 0 !important;
+  visibility: hidden;
+}
+
+.sidebar-brand a {
+  text-decoration: none;
+}
+
+.sidebar-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-nav-link,
+.sidebar .admin-nav-trigger {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 11px;
+  padding: 9px 12px;
+  color: #cbd5e1 !important;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none !important;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.admin-nav-link:hover,
+.sidebar .admin-nav-trigger:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.admin-nav-link.is-active,
+.sidebar .admin-nav-trigger.is-active {
+  color: #fff !important;
+  background: rgba(227, 30, 36, 0.2) !important;
+  box-shadow: inset 3px 0 #e31e24;
+}
+
+.admin-subnav {
+  margin: 3px 0 6px 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.13);
+  padding-left: 8px;
+}
+
+.admin-subnav-link {
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #aebbd0;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.admin-subnav-link:hover,
+.admin-subnav-link.is-active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contentright {
+  flex: 1 1 0%;
+  width: auto !important;
+  min-height: calc(100vh - 64px);
+  padding: 24px !important;
+  background: var(--admin-canvas);
+}
+
+.admin-topbar {
+  min-height: 64px;
+}
+
+.MuiAppBar-colorPrimary {
+  background: var(--admin-navy) !important;
+}
+
+.loginsection {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 88px 16px 32px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(227, 30, 36, 0.08), transparent 28%),
+    linear-gradient(145deg, #f8f9fc, #eef2f8);
+}
+
+.admin-auth-header {
+  min-height: 64px;
+  border-bottom: 1px solid #e7eaf0;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+}
+
+.loginsection .loginbox {
+  width: min(550px, 100%) !important;
+  margin: 0 auto !important;
+  border: 1px solid #e6eaf1;
+  border-radius: 22px;
+  padding: 32px !important;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(15, 31, 75, 0.12);
+}
+
+.loginsection .loginbox h1 {
+  color: #0f1f4b;
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 1.25;
+}
+
+.loginsection .loginbox input {
+  min-height: 44px;
+  border: 1px solid #dce2ec;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.loginsection .loginbox input:focus {
+  border-color: #0f1f4b;
+  box-shadow: 0 0 0 3px rgba(15, 31, 75, 0.1);
+}
+
+.admin-welcome {
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(227, 30, 36, 0.5), transparent 28%),
+    linear-gradient(120deg, #0f1f4b, #182f64 72%, #263c72);
+  box-shadow: 0 12px 30px rgba(15, 31, 75, 0.12);
+}
+
+.contentright .card,
+.contentright .bg-white.rounded-xl,
+.contentright .bg-white.rounded-lg {
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(15, 31, 75, 0.045);
+}
+
+.contentright table {
+  min-width: 640px;
+}
+
+.contentright input:not([type="checkbox"]):not([type="radio"]),
+.contentright select,
+.contentright textarea {
+  max-width: 100%;
+}
+
+.mobile-sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .contentright {
+    padding: 18px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .contentmain {
+    display: block;
+  }
+
+  .sidebarwrapper {
+    position: fixed;
+    z-index: 40;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    width: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .sidebarwrapper[class*="w-[18%]"] {
+    width: min(84vw, 300px) !important;
+  }
+
+  .sidebar {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 12px !important;
+    overflow-y: auto;
+  }
+
+  .sidebarwrapper[class*="w-0"] .sidebar {
+    width: 0 !important;
+    visibility: hidden;
+  }
+
+  .mobile-sidebar-overlay {
+    position: fixed;
+    z-index: 39;
+    inset: 64px 0 0;
+    display: block;
+    width: 100%;
+    border: 0;
+    background: rgba(15, 23, 42, 0.45);
+  }
+
+  .admin-topbar {
+    padding-left: 12px !important;
+  }
+
+  .contentright {
+    width: 100% !important;
+    min-height: calc(100vh - 64px);
+    padding: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentright {
+    padding: 10px !important;
+  }
+
+  .admin-welcome {
+    padding: 18px !important;
+  }
+
+  .loginsection .loginbox {
+    padding: 24px 18px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

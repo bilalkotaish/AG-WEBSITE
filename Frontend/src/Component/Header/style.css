@@ -1,0 +1,20 @@
+@keyframes header-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-header-marquee {
+  animation: header-marquee 30s linear infinite;
+
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-header-marquee {
+    animation: none;
+  }
+}
